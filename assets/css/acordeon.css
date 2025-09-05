@@ -20,6 +20,13 @@
     color: #fff;
     border: none;
 }
+
+.acordeon .trigger h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
 .acordeon.open,
 .acordeon:hover {
     background-color: #55569E;
