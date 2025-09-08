@@ -5,7 +5,7 @@ function updateProfileData(profileData) {
 
     const name = document.getElementById('profile.name');
     name.innerText = profileData.name;
-    
+
     const job = document.getElementById('profile.job');
     job.innerText = profileData.job;
 
@@ -30,22 +30,22 @@ function updateProfileData(profileData) {
 
 }
 
-function updateSoftSkills (profileData) {
+function updateSoftSkills(profileData) {
     const softSkills = document.getElementById('profile.skills.softSkills');
 
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('');
 }
 
-function updateHardSkills (profileData) {
+function updateHardSkills(profileData) {
     const hardSkills = document.getElementById('profile.skills.hardSkills');
 
-    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('');
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"/></li>`).join('');
 }
 
-function updateLanguages (profileData) {
+function updateLanguages(profileData) {
     const languages = document.getElementById('profile.languages');
 
-    hardSkills.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('');
+    languages.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('');
 }
 
 (async () => {
